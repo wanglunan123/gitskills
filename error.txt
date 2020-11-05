@@ -1,0 +1,8 @@
+file,err := os.Open(filename)
+if err != nil {
+
+	painc(err)
+}
+
+defer file.Close()
+io.Copy(os,Stdout,file)

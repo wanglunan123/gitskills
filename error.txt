@@ -5,4 +5,4 @@ if err != nil {
 }
 
 defer file.Close()
-io.Copy(os,Stdout,file)
+io.Copy(os.Stdout,file)
